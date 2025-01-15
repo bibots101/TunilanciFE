@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('../public/font/stylesheet.css');
+:root{
+    --main-color: #079046;
+    --dark-color: #010101;
+    --light-color: #E4E4E4;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}

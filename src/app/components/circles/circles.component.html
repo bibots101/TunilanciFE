@@ -1,0 +1,12 @@
+<div class="animation-wrapper">
+    <div
+      *ngFor="let circle of circles"
+      class="circle"
+      [style.top.%]="circle.top"
+      [style.left.%]="circle.left"
+      [style.width.vw]="circle.size"
+      [style.height.vw]="circle.size"
+      [style.animationDuration]="'calc(' + circle.speed + 's + 2s)'"
+    ></div>
+  </div>
+  

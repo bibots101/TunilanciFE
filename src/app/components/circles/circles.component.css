@@ -1,0 +1,31 @@
+.animation-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1; /* Puts the animation behind other elements */
+  }
+  
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(7, 119, 59, 0.2); /* Green with transparency */
+    filter: blur(20px);
+    animation: move-around infinite alternate;
+  
+    /* Keyframes for random movement */
+    animation-name: move-around;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes move-around {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(calc(-20vw + 10px), calc(-20vh + 100px));
+    }
+  }
+  

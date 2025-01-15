@@ -1,0 +1,93 @@
+.software-card {
+    align-items: center;
+    border-radius: 16px;
+    border: 2.5px solid var(--Cards-Stroke, #b5b5b5);
+    box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: rgba(228, 228, 228, 0.25);
+    display: flex;
+    max-width: 400px;
+    width: 15vw;
+    padding: 24px 25px;
+    gap: 20px;
+  }
+  
+  .content-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: auto 0;
+  }
+  
+  .header-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .software-icon {
+    aspect-ratio: 1.5;
+    object-fit: contain;
+    object-position: center;
+    width: 66px;
+    user-select: none;
+  }
+  
+  .title {
+    font-family: 'Neulis Alt', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #0d0d0d;
+    line-height: 22px;
+    margin: 0;
+    width:150px;
+    line-clamp: 2;
+    overflow: hidden;
+  }
+  .action-button {
+    text-shadow: 2px 2px 8px rgba(228, 228, 228, 0.5);
+    border-radius: 43px;
+    box-shadow: 4px 4px 12px 0px rgba(7, 144, 70, 0.25);
+    background-color: #079046;
+    margin-top: 15px;
+    padding: 5px 20px;
+    min-height: 28px;
+    font-family: 'Neulis Alt', sans-serif;
+    font-size: 16px;
+    color: #e4e4e4;
+    line-height: 1.2;
+    border: 2px solid #079046;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  .action-button::before {
+    content: ""; /* Empty content by default */
+    position: absolute;
+    left: -20px; /* Position the symbol off the button by default */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #079046; /* Green color for the symbol */
+    font-size: 25px;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease, left 0.3s ease; /* Smooth animation */
+  }
+  
+  .action-button:hover::before {
+    content: ">"; /* Add the symbol on hover */
+    left: 10px; /* Move the symbol closer to the button */
+    opacity: 1; /* Make it visible */
+  }
+  
+  .action-button:hover {
+    padding: 10px 25px;
+    background-color: transparent;
+    color: #079046;
+    transform: translateY(-2px);
+  }
+  
+  .action-button:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }

@@ -1,0 +1,26 @@
+<article class="testimonial-card">
+    <div class="testimonial-content">
+      <img
+        loading="lazy"
+        [src]="imageSrc"
+        class="profile-image"
+        alt="person image"
+      />
+      <div class="testimonial-details">
+        <div class="author-info">
+          <div class="author-header">
+            <h2 class="author-name">{{ authorName }}</h2>
+            <span
+              class="status-indicator"
+              [style.backgroundColor]="statusIndicatorColor"
+              aria-hidden="true"
+            ></span>
+          </div>
+          <p class="author-title">{{ authorTitle }}</p>
+        </div>
+        <blockquote class="testimonial-text">
+          {{ testimonialText }}
+        </blockquote>
+      </div>
+    </div>
+  </article>

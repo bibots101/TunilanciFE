@@ -1,0 +1,22 @@
+<div class="software-card" role="article">
+  <div class="content-wrapper">
+    <div class="header-section">
+      <img
+        loading="lazy"
+        [src]="imageSrc"
+        class="software-icon"
+        [alt]="altText"
+      />
+      <h2 class="title">
+        {{ title }}
+      </h2>
+    </div>
+    <button 
+      class="action-button"
+      [attr.aria-label]="'View ' + title + ' Details'"
+      tabindex="0"
+    >
+      {{ buttonText }}
+    </button>
+  </div>
+</div>

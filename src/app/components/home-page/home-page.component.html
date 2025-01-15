@@ -1,0 +1,284 @@
+<main class="landing-container">
+  <section class="hero" aria-label="Welcome section">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          Welcome to
+          <br />
+          Tunilanci !
+        </h1>
+        <p class="hero-subtitle">Where work made differently through</p>
+        <p class="hero-animation">
+          <span class="animated-text">RELIABILITY.</span>
+          <span class="animated-text">EFFICIENCY.</span>
+          <span class="animated-text">TRANSPARENCY.</span>
+          <span class="animated-text">INNOVATION.</span>
+          <span class="animated-text">COMMUNITY.</span>
+        </p>
+      </div>
+      <button class="cta-button" aria-label="Get Started"><span>Get Started</span></button>
+    </div>
+    <img
+      loading="lazy"
+      src="images/home/first.svg"
+      class="hero-image"
+      alt="Tunilanci platform illustration"
+    />
+  </section>
+
+  <section class="signup-section" aria-label="Sign up options">
+    <div class="signup-content">
+      <div class="signup-header">
+        <h2 class="signup-title">Ready to Start Your Journey?</h2>
+        <p class="signup-subtitle">
+          Join thousands of professionals and businesses growing with Tunilanci.
+        </p>
+      </div>
+      <div class="profile-choices">
+        <div class="profile-card">
+          <img
+            loading="lazy"
+            src="images/home/second.svg"
+            class="profile-image"
+            alt="Freelancer profile illustration"
+          />
+          <div class="profile-actions">
+            <button class="cta-button" aria-label="Sign up as freelancer">
+              SIGN UP
+            </button>
+            <p class="profile-type">as Freelancer</p>
+          </div>
+        </div>
+        <div class="profile-card">
+          <img
+            loading="lazy"
+            src="images/home/third.svg"
+            class="profile-image"
+            alt="Client profile illustration"
+          />
+          <div class="profile-actions">
+            <button class="cta-button" aria-label="Sign up as client">
+              SIGN UP
+            </button>
+            <p class="profile-type">as Client</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="transition-section" aria-label="why-choosing-title">
+    <h1 id="why-choosing-title" class="section-title">Why Choosing Tunilanci?</h1>
+    <p class="section-description">
+      <span class="brand-highlight">Tunilanci</span>
+      is a freelancing platform that connects freelancers like you, with
+      clients, like you.
+    </p>
+    <div class="key-values" aria-label="Key Features">
+      <article class="feature-card">
+        <div class="image-container">
+          <img
+            loading="lazy"
+            src="images/home/fourth.svg"
+            alt="Reliability feature icon"
+            class="feature-image"
+          />
+        </div>
+        <div class="content-wrapper">
+          <div class="title-container">
+            <h2 class="feature-title">Reliability</h2>
+            <span class="indicator-dot" aria-hidden="true"></span>
+          </div>
+          <p class="feature-description">
+            Trustworthy connections with secure payments and verified users
+          </p>
+        </div>
+      </article>
+  
+      <article class="feature-card">
+        <div class="image-container">
+          <img
+            loading="lazy"
+            src="images/home/fifth.svg"
+            alt="Efficiency feature icon"
+            class="feature-image"
+          />
+        </div>
+        <div class="content-wrapper">
+          <div class="title-container">
+            <h2 class="feature-title">Efficiency</h2>
+            <div class="indicator-group" aria-hidden="true">
+              <span class="indicator-dot"></span>
+              <span class="indicator-dot"></span>
+            </div>
+          </div>
+          <p class="feature-description">
+            Quickly find top-tier freelancers or exciting projects
+          </p>
+        </div>
+      </article>
+  
+      <article class="feature-card">
+        <div class="image-container">
+          <img
+            loading="lazy"
+            src="images/home/seixth.svg"
+            alt="Transparency feature icon"
+            class="feature-image"
+          />
+        </div>
+        <div class="content-wrapper">
+          <div class="title-container">
+            <h2 class="feature-title">Transparency</h2>
+            <div class="indicator-group" aria-hidden="true">
+              <span class="indicator-dot"></span>
+              <span class="indicator-dot"></span>
+              <span class="indicator-dot"></span>
+            </div>
+          </div>
+          <p class="feature-description">
+            Clear terms, fair practices, and open communication
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="expertise-section" aria-label="expertise">
+    <h1 class="expertise-title">Explore a World of Expertise</h1>
+    <p class="expertise-description">A place where the hardest tasks are made easy.</p>
+    <div class="world-card-container">
+      <div
+        class="scroll-container"
+        (mousedown)="startDrag($event)"
+        (touchstart)="startDrag($event)"
+        (mousemove)="drag($event)"
+        (touchmove)="drag($event)"
+        (mouseup)="stopDrag()"
+        (touchend)="stopDrag()"
+        (mouseleave)="stopDrag()">
+        <app-world-card
+          *ngFor="let card of cards"
+          [imageSrc]="card.imageSrc"
+          [title]="card.title"
+          [buttonText]="card.buttonText"
+          [altText]="card.altText">
+        </app-world-card>
+      </div>
+    </div>
+  </section>
+  
+  <section class="steps-section" aria-label="steps">
+    <h1 class="steps-title">How Tunilanci Works</h1>
+    <p class="steps-slogan">Easy as you like.</p>
+    <div class="line-verif">
+      <img src="images/home/verified.svg" alt="verified icon" class="verified-image">
+      <p class="verified-desc">3-Step Process for Freelancers</p>
+    </div>
+    <div class="onboarding-container">
+      <section class="steps-container">
+        <article class="step-item">
+          <div class="step-content">
+            <img
+              loading="lazy"
+              src="images/home/exit.svg"
+              class="step-icon"
+              alt="Profile creation icon"
+            />
+            <h2 class="step-title">Sign Up and Build Your Profile</h2>
+          </div>
+          <button class="action-button" tabindex="0">Sign Up</button>
+        </article>
+    
+        <article class="step-item">
+          <div class="step-content">
+            <img
+              loading="lazy"
+              src="images/home/search.svg"
+              class="step-icon"
+              alt="Project browsing icon"
+            />
+            <h2 class="step-title">Browse and Apply for Projects</h2>
+          </div>
+          <button class="action-button" tabindex="0">Browse Offers</button>
+        </article>
+    
+        <article class="step-item">
+          <div class="step-content">
+            <img
+              loading="lazy"
+              src="images/home/tunilanci.svg"
+              class="step-icon"
+              alt="Secure payment icon"
+            />
+            <h2 class="step-title">Deliver Work and Get Paid Securely</h2>
+          </div>
+        </article>
+      </section>
+    </div>
+    <div class="line-verif">
+      <img src="images/home/process.svg" alt="verified icon" class="verified-image">
+      <p class="verified-desc">3-Step Process for Clients</p>
+    </div>
+    <div class="onboarding-container">
+      <section class="steps-container">
+        <article class="step-item">
+          <div class="step-content">
+            <img
+              loading="lazy"
+              src="images/home/note.svg"
+              class="step-icon"
+              alt="Marketplace and job posting icon"
+            />
+            <h2 class="step-title">Post Your Job or Browse Talent</h2>
+          </div>
+          <div class="step-actions">
+            <button class="action-button" tabindex="0">Marketplace</button>
+            <button class="action-button" tabindex="0">Post a Job</button>
+          </div>
+        </article>
+    
+        <article class="step-item">
+          <div class="step-content">
+            <img
+              loading="lazy"
+              src="images/home/connect.svg"
+              class="step-icon"
+              alt="Connect with freelancers icon"
+            />
+            <h2 class="step-title" id="fixed ">Connect with Freelancers <br></h2>
+          </div>
+          <button class="action-button" tabindex="0">Tunilancers Hub</button>
+        </article>
+    
+        <article class="step-item">
+          <div class="step-content">
+            <img
+              loading="lazy"
+              src="images/home/smile.svg"
+              class="step-icon"
+              alt="Project completion icon"
+            />
+            <h2 class="step-title">Complete Projects with Confidence</h2>
+          </div>
+        </article>
+      </section>
+    </div>
+  </section>
+  <section class="community-section" aria-label="community">
+    <h1 class="community-title">Just a freelancing platform?</h1>
+    <p class="community-slogan"><span class="brand-highlight">Tunilanci</span> goes beyond what's only work-related,</p>
+    <p  class="community-slogan">it's a diverse <span class="brand-highlight">community</span> you build.</p>
+    <div class="cards-container">
+      <app-feedback-card
+          *ngFor="let feedback of feedbacks"
+          [imageSrc]="feedback.imageSrc"
+          [authorName]="feedback.authorName"
+          [statusIndicatorColor]="feedback.statusIndicatorColor"
+          [authorTitle]="feedback.authorTitle"
+          [testimonialText]="feedback.testimonialText">
+    </app-feedback-card>
+    </div>
+    <h1 class="lanci-title">Lanci Now!</h1>
+    <p class="lanci-desc">And join discussions with freelancers and clients</p>
+    <button class="lanci-button" tabindex="0">Visit our Community</button>
+  </section>
+</main>
