@@ -1,1 +1,68 @@
-<p>login-page works!</p>
+<main class="page-container">
+  <section class="signup-section">
+      <div class="signup">
+          <img src="images/signup/Logo.svg" alt="Tunulanci logo" class="tunilanci-logo">
+          <h1 class="signup-title">Sign in</h1>
+          <span class="span-text">Continue with</span>
+          <div class="continue-with-container">
+            <button class="continue-with-button" id="google-button">
+                <img src="images/signup/google.svg" id="google-icon" class="continue-logo" alt="google icon">
+            </button>
+            <button class="continue-with-button" id="facebook-button">
+                <img src="images/signup/facebook.svg" id="facebook-icon" class="continue-logo" alt="facebook icon">
+            </button>
+            <button class="continue-with-button" id="apple-button">
+                <img src="images/signup/apple.svg" id="apple-icon" class="continue-logo" alt="apple icon">
+            </button>
+          </div>
+          <span class="span-text">Or sign-in manually</span>
+          <div class="signup-form">
+              <form class="form">
+                  <div class="form-line">
+                      <input type="text" placeholder="Email or Username" class="input-group" name="email" required>
+                  </div>
+                  <div class="password-line">
+                      <input 
+                        [type]="isPasswordVisible ? 'text' : 'password'" 
+                        placeholder="Password" 
+                        class="input-group" 
+                        id="password-input" 
+                        required 
+                      />
+                      <button 
+                        type="button" 
+                        (click)="togglePasswordVisibility()" 
+                        class="eye-icon"
+                        aria-label="Toggle password visibility">
+                        <img 
+                          [src]="isPasswordVisible ? 'images/signup/visible.svg' : 'images/signup/hidden.svg'" 
+                          alt="eye icon" 
+                        />
+                      </button>
+                  </div>
+                  <a href="">Forgot Password?</a>
+                  <div class="agreement-section">
+                      <input type="checkbox" id="agreement" class="checkbox" />
+                      <label for="agreement" class="agreement-text">
+                        <span>Remember me</span>
+                      </label>
+                  </div>
+              </form>
+          </div>
+          <button class="cta-button">
+              <span>Sign in</span>
+          </button>
+          <div class="divider-container" role="separator" aria-orientation="horizontal">
+            <div class="divider-line"></div>
+            <div class="divider-text">Don't have a Tunilanci account?</div>
+            <div class="divider-line"></div>
+        </div>
+          <div>
+              <a href="#" class="login-link">Sign Up</a>
+          </div>
+      </div>
+      <div class="illustrarion">
+          <img src="images/signup/telescope.svg" alt="illustraion icon" class="illustraion image">
+      </div>
+  </section>
+</main> 

@@ -1,5 +1,5 @@
 <nav class="navigation-bar" role="navigation" aria-label="Main navigation">
-  <a href=""><img
+  <a routerLink="/" routerLinkActive="active"><img
     loading="lazy"
     src="images/header/logo.svg"
     class="company-logo"
@@ -48,7 +48,8 @@
         </div>
       </form>
       <div class="auth-section">
-        <button class="login-button" aria-label="Login">SIGN IN</button>
+        <button class="login-button" aria-label="Login" routerLink="SignIn">SIGN IN</button>
+        <button class="login-button" aria-label="Sign Up" routerLink="SignUp">SIGN UP</button>
         <img
           loading="lazy"
           src="images/header/profileicon.svg"

@@ -788,7 +788,7 @@ app-world-card {
 }
 
 .lanci-button:hover::before {
-  content: url("../../../../public/images/home/community.svg"); /* Add the symbol on hover */
+  content: url("/images/home/community.svg"); /* Add the symbol on hover */
   left: 10px; /* Move the symbol closer to the button */
   top: 22px;
   opacity: 1; /* Make it visible */

@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { WorldCardComponent } from './world-card/world-card.component';
 import { FeedbackCardComponent } from './feedback-card/feedback-card.component';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [CommonModule,WorldCardComponent,FeedbackCardComponent],
+  imports: [CommonModule,WorldCardComponent,FeedbackCardComponent,RouterLink,RouterLinkActive],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'
 })
