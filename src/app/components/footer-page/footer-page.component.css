@@ -38,7 +38,7 @@
   flex-direction: column;
   font-family: Neulis Alt, sans-serif;
   color: #e4e4e4;
-  width: 305px;
+  width: 16vw;
 }
 
 .logo {
@@ -53,13 +53,13 @@
 }
 
 .brand-title {
-  font-size: 18px;
+  font-size: 0.9vw;
   line-height: 1.2;
   margin: 0;
 }
 
 .brand-description {
-  font-size: 14px;
+  font-size: 0.8vw;
   line-height: 17px;
   margin-top: 12px;
 }
@@ -67,18 +67,18 @@
 .divider {
   align-self: stretch;
   background-color: #e4e4e4;
-  width: 2px;
+  width: 0.1vw;
   min-height: 275px;
 }
 
 .site-nav,
 .legal-nav {
   color: #e4e4e4;
-  font: 400 16px/1.2 Neulis Alt, sans-serif;
+  font: 400 0.9vw/1.2 Neulis Alt, sans-serif;
 }
 
 .nav-title {
-  font-size: 24px;
+  font-size: 1.6vw;
   line-height: 1;
   margin: 0 0 12px;
   padding-left: 12px;
@@ -102,7 +102,7 @@
 .nav-dot {
   background-color: #079046;
   border-radius: 50%;
-  width: 8px;
+  width: 0.6vw;
   height: 8px;
   opacity: 0; 
   visibility: hidden;
@@ -114,9 +114,9 @@
 }
 
 .contact-section {
-  width: 212px;
+  width: 15vw;
   color: #e4e4e4;
-  font: 400 16px Neulis Alt, sans-serif;
+  font: 400 1vw Neulis Alt, sans-serif;
 }
 
 .contact-info {
@@ -133,8 +133,8 @@
 }
 
 .contact-icon {
-  width: 20px;
-  height: 18px;
+  aspect-ratio: 0.9;
+  width: 1.4vw;
   object-fit: contain;
 }
 
@@ -145,8 +145,8 @@
 }
 
 .social-icon {
-  width: 24px;
-  height: 24px;
+  aspect-ratio: 1;
+  width: 2vw;
   object-fit: contain;
 }
 
@@ -169,7 +169,7 @@
 
 .copyright-divider {
   background-color: #d9d9d9;
-  width: 1px;
+  width: 0.1vw;
   height: 16px;
 }
 
