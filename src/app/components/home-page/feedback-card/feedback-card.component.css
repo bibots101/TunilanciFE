@@ -3,66 +3,64 @@
     border: 2.5px solid var(--Cards-Stroke, #b5b5b5);
     backdrop-filter: blur(20px);
     background-color: rgba(228, 228, 228, 0.75);
-    padding: 20px 24px;
-    max-width: 283px;
-    height: 340px;
+    padding: 4vh 2vw;
+    aspect-ratio: 0.7;
+    max-width: 19vw;
   }
   
   .testimonial-content {
-    padding: 12px;
+    padding: 2vw;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
   .profile-image {
-    width: 100px;
-    height: 100px;
+    aspect-ratio: 1;
+    width: 7vw;
     border-radius: 50%;
     object-fit: contain;
   }
   
   .testimonial-details {
-    margin-top: 24px;
+    margin-top: 5vh;
     width: 100%;
   }
   
   .author-info {
-    max-width: 211px;
+    max-width: 20vw;
   }
   
   .author-header {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5vw;
   }
   
   .author-name {
     color: #079046;
-    font-size: 24px;
-    line-height: 1;
+    font-size: 1.5vw;
     margin: 0;
     font-weight: 400;
   }
   
   .status-indicator {
-    width: 12px;
-    height: 12px;
+    aspect-ratio: 1;
+    width: 0.8vw;
     background-color: rgba(7, 144, 70, 1);
     border-radius: 50%;
   }
   
   .author-title {
     color: #0d0d0d;
-    font-size: 18px;
-    line-height: 1.2;
+    font-size: 1.3vw;
     margin: 0;
   }
   
   .testimonial-text {
-    width: 88%;
+    width: 100%;
     color: #0d0d0d;
-    font-size: 15px;
-    line-height: 17px;
-    margin: 12px 0 0;
+    font-size: 1vw;
+    margin: 3vh 0 0;
+    line-height: 2.3vh;
   }

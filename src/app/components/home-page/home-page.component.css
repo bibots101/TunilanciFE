@@ -290,53 +290,6 @@
   margin-top: 8px;
 }
 
-/* Media queries */
-@media (max-width: 991px) {
-  .hero {
-    max-width: 100%;
-  }
-
-  .hero-content {
-    max-width: 100%;
-  }
-
-  .hero-text {
-    max-width: 100%;
-  }
-
-  .hero-title {
-    font-size: 40px;
-    line-height: 39px;
-  }
-
-  .hero-subtitle {
-    max-width: 100%;
-  }
-
-  .hero-animation {
-    font-size: 40px;
-  }
-
-  .signup-section {
-    max-width: 100%;
-  }
-
-  .signup-content {
-    max-width: 100%;
-  }
-
-  .signup-header {
-    max-width: 100%;
-  }
-
-  .signup-title {
-    max-width: 100%;
-  }
-
-  .profile-choices {
-    max-width: 100%;
-  }
-}
 
 /* Accessibility */
 .visually-hidden {
@@ -489,24 +442,7 @@
   line-height: 1.2;
 }
 
-@media (max-width: 991px) {
-  .section-title,
-  .section-description {
-    max-width: 100%;
-  }
 
-  .key-values {
-    max-width: 100%;
-  }
-
-  .image-container {
-    padding: 0 20px;
-  }
-
-  .content-wrapper {
-    padding: 0 20px;
-  }
-}
 
 /* Expertise styles */
 
@@ -521,20 +457,20 @@
 .expertise-title{
   color: #0d0d0d;
   text-shadow: 4px 4px 12px rgba(7, 144, 70, 0.25);
-  font-size: 60px;
+  font-size: 4.2vw;
   line-height: 1;
 }
 .expertise-description{
   color: #079046;
-  font-size: 40px;
+  font-size: 2.8vw;
   line-height: 1.2;
-  margin-top: 12px;
+  margin-top: 1vh;
   font-weight: 400;
 }
 .world-card-container {
   max-width: 100%;
   width: 100%;
-  margin: 15px 0px;
+  margin: 2vh 0px;
   overflow: hidden;
   position: relative;
   user-select: none;
@@ -544,8 +480,8 @@
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
-  gap: 1rem;
-  padding: 2rem 0;
+  gap: 2.2vw;
+  padding: 1.2vh 0;
   width: 100%;
   height: 22vh;
   cursor: grab;
@@ -565,15 +501,6 @@ app-world-card {
   width: 18vw;
   scroll-snap-align: center; 
 }
-
-@media (max-width: 768px) {
-  app-world-card {
-    width: 200px;
-  }
-}
-
-
-
 /* steps styles */
 .steps-section{
   display: flex;
