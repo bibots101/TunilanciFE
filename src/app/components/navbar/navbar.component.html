@@ -1,11 +1,14 @@
-<nav class="navigation-bar" role="navigation" aria-label="Main navigation">
+<nav class="navigation-bar navbar sticky-top" role="navigation" aria-label="Main navigation">
   <a routerLink="/" routerLinkActive="active"><img
     loading="lazy"
     src="images/header/logo.svg"
     class="company-logo"
     alt="Company Logo"
   /></a>
-    <div class="navigation-menu" id="navbarNav">
+  <button class="navbar-toggler red" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon red"></span>
+  </button>
+    <div class="navigation-menu collapse navbar-collapse" id="navbarNav">
       <div class="menu-item">
         <span class="status-indicator"></span>
         <a href="#" class="menu-link">Find work</a>

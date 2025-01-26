@@ -5,9 +5,9 @@
     box-shadow: 0.4vw 0.4vw 1vw 0vw rgba(0, 0, 0, 0.2);
     background-color: rgba(228, 228, 228, 0.25);
     display: flex;
-    max-width: 20vw;
-    width: 15vw;
-    padding: 3vh 2vw;
+    max-width: 25vw;
+    width: 20vw;
+    padding: 1vw 2vw;
     gap: 2vw;
   }
   
@@ -39,7 +39,7 @@
     font-size: 1.2vw;
     font-weight: 400;
     color: #0d0d0d;
-    line-height: 3vh;
+    line-height: 1.2vw;
     margin: 0;
     width:11vw;
     line-clamp: 2;
@@ -50,9 +50,9 @@
     border-radius: 2vw;
     box-shadow: 0.2vw 0.2vw 0.9vw 0vw rgba(7, 144, 70, 0.25);
     background-color: #079046;
-    margin-top: 4vh;
-    padding: 1vh 1vw;
-    min-height: 2vh;
+    margin-top: 2vw;
+    padding: 0.5vw 1vw;
+    min-height: 1vw;
     font-family: 'Neulis Alt', sans-serif;
     font-size: 1.2vw;
     color: #e4e4e4;
@@ -81,7 +81,7 @@
   }
   
   .action-button:hover {
-    padding: 1vh 1.8vw;
+    padding: 0.6vw 1.8vw;
     background-color: transparent;
     color: #079046;
     transform: translateY(-0.01vw);
