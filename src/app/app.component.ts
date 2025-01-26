@@ -10,7 +10,7 @@ import { OffCanvasNavbarComponent } from "./components/off-canvas-navbar/off-can
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HomePageComponent, FooterPageComponent, NavbarComponent, CirclesComponent, SignupPageComponent, OffCanvasNavbarComponent],
+  imports: [RouterOutlet, FooterPageComponent, NavbarComponent, CirclesComponent, OffCanvasNavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
