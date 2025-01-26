@@ -1,11 +1,11 @@
 .testimonial-card {
-    border-radius: 24px;
+    border-radius: 2vw;
     border: 2.5px solid var(--Cards-Stroke, #b5b5b5);
     backdrop-filter: blur(20px);
     background-color: rgba(228, 228, 228, 0.75);
-    padding: 4vh 2vw;
+    padding: 1vw;
     aspect-ratio: 0.7;
-    max-width: 19vw;
+    max-width: 22vw;
   }
   
   .testimonial-content {
@@ -23,7 +23,7 @@
   }
   
   .testimonial-details {
-    margin-top: 5vh;
+    margin-top: 2vw;
     width: 100%;
   }
   
@@ -61,6 +61,6 @@
     width: 100%;
     color: #0d0d0d;
     font-size: 1vw;
-    margin: 3vh 0 0;
-    line-height: 2.3vh;
+    margin: 1vw 0 0;
+    line-height: 1.2vw;
   }

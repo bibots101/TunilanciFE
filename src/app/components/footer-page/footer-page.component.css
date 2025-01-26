@@ -5,7 +5,7 @@
   backdrop-filter: blur(5px);
   display: flex;
   flex-direction: column;
-  padding: 4vw 3vw 0.2vw;
+  padding: 4vw 2vw 0.2vw;
   font-family: Neulis Alt;
   flex-wrap: nowrap;
 }
@@ -25,7 +25,6 @@
 .footer-content {
   display: flex;
   width: 100%;
-  max-width: 100vw;
   align-items: start;
   gap: 1vw;
   justify-content: center;
@@ -181,7 +180,7 @@
 .copyright-divider {
   background-color: #d9d9d9;
   width: 0.1vw;
-  height: 2vw;
+  height: 1vw;
 }
 
 .copyright-text {
