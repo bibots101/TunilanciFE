@@ -68,7 +68,6 @@
 .menu-item .menu-link[aria-current="page"] .status-indicator {
     opacity: 1; 
 }
-  
   .menu-link {
     color: inherit;
     text-decoration: none;
@@ -167,21 +166,45 @@
     clip: rect(0, 0, 0, 0);
     border: 0;
   }
-  
-  @media (max-width: 991px) {
+  .navbar-toggler {
+    display: none; /* Initially hidden */
+    margin-right: 1vw; /* Space between toggler and logo */
+    order: -1; 
+}
+
+
+  @media (max-width: 426px) {
     .navigation-bar {
       padding: 0 20px;
     }
-    
+     .navbar-toggler{
+      display: unset; 
+    } 
     .navigation-menu {
       max-width: 100%;
     }
-    
+
     .menu-item,
-    .navigation-actions,
-    .search-container,
-    .auth-section,
-    .login-button {
+    .navigation-actions
+ {
       white-space: initial;
+      visibility: hidden;
+    }
+  }
+  @media (max-width: 769px) {
+    .navigation-bar {
+      padding: 0 20px;
+    }
+     .navbar-toggler{
+      display: unset; 
+    } 
+    .navigation-menu {
+      max-width: 100%;
+    }
+
+    .menu-item,
+    .navigation-actions {
+      white-space: initial;
+      visibility: hidden;
     }
   }
