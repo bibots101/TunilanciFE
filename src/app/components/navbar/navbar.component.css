@@ -185,13 +185,21 @@
     }
 
     .menu-item,
-    .navigation-actions
- {
+    .profile-icon,
+    .search-form {
       white-space: initial;
       visibility: hidden;
     }
+    .navigation-actions {
+      order: 5; /* Move the navigation-actions (login button) to the far left */
+      visibility: visible; /* Ensure the login button is visible */
   }
-  @media (max-width: 769px) {
+    .login-button {
+      order: 5; /* Ensure the login button is the first item within navigation-actions */
+      margin-right: auto; /* Push it to the far left */
+  }
+  }
+  /* @media (max-width: 769px) {
     .navigation-bar {
       padding: 0 20px;
     }
@@ -207,4 +215,4 @@
       white-space: initial;
       visibility: hidden;
     }
-  }
+  } */
