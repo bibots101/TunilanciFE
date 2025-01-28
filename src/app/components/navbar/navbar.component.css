@@ -168,12 +168,52 @@
   }
   .navbar-toggler {
     display: none; /* Initially hidden */
-    margin-right: 1vw; /* Space between toggler and logo */
+    margin-left: -6vw; /* Space between toggler and logo */
     order: -1; 
+    border: none;
 }
 
 
-  @media (max-width: 426px) {
+@media (max-width: 376px)  {
+  .navigation-bar {
+    padding: 0 20px;
+  }
+   .navbar-toggler{
+    display: unset; 
+  } 
+  .navigation-menu {
+    max-width: 100%;
+  }
+
+  .menu-item,
+  .profile-icon,
+  .search-form {
+    white-space: initial;
+    visibility: hidden;
+  }
+  .navigation-actions {
+    order: 5; 
+    visibility: visible; 
+}
+  .login-button {
+    order: 5;
+    width: 70px;
+    height: 40px;
+    margin-right: auto;
+    padding-top: 1vw;
+    font-size:3.5vw;
+}
+.company-logo {
+  aspect-ratio: 5.26;
+  object-fit: contain;
+  object-position: center;
+  width: 20vw;
+  align-self: stretch;
+  margin: auto 0;
+  margin-bottom: 3px;
+}
+}
+  @media (min-width : 376px) and (max-width: 426px) {
     .navigation-bar {
       padding: 0 20px;
     }
@@ -191,28 +231,105 @@
       visibility: hidden;
     }
     .navigation-actions {
-      order: 5; /* Move the navigation-actions (login button) to the far left */
-      visibility: visible; /* Ensure the login button is visible */
+      order: 5; 
+      visibility: visible; 
   }
     .login-button {
-      order: 5; /* Ensure the login button is the first item within navigation-actions */
-      margin-right: auto; /* Push it to the far left */
+      order: 5;
+      width: 70px;
+      height: 40px;
+      margin-right: auto;
+      padding-top: 1.2vw;
+      font-size:2vw;
+  }
+  .company-logo {
+    aspect-ratio: 5.26;
+    object-fit: contain;
+    object-position: center;
+    width: 20vw;
+    align-self: stretch;
+    margin: auto 0;
+    margin-bottom: 3px;
   }
   }
-  /* @media (max-width: 769px) {
+  @media (min-width: 426px) and (max-width: 667px) {
     .navigation-bar {
-      padding: 0 20px;
+      padding: 3vw 20px;
     }
      .navbar-toggler{
       display: unset; 
+      margin-left: -3vw;
     } 
     .navigation-menu {
       max-width: 100%;
     }
 
     .menu-item,
-    .navigation-actions {
+    .profile-icon,
+    .search-form{
       white-space: initial;
       visibility: hidden;
     }
-  } */
+    .navigation-actions {
+      order: 5; 
+      visibility: visible; 
+  }
+    .login-button {
+      order: 5; 
+      width:100px;
+      height: 35px;
+      margin-right: auto;
+      font-size: 2vw;
+  }
+  .company-logo {
+    aspect-ratio: 5.26;
+    object-fit: contain;
+    object-position: center;
+    width: 20vw;
+    align-self: stretch;
+    margin: auto 0;
+    margin-bottom: 3px;
+  }
+  }
+  @media (max-width: 769px) and (min-width: 667px) {
+    .navigation-bar {
+      padding: 3vw 20px;
+    }
+     .navbar-toggler{
+      display: unset; 
+      margin-left: -3vw;
+    } 
+    .navigation-menu {
+      max-width: 100%;
+    }
+
+    .menu-item,
+    .profile-icon{
+      white-space: initial;
+      visibility: hidden;
+    }
+    .navigation-actions {
+      order: 5; 
+      visibility: visible; 
+  }
+    .login-button {
+      order: 5; 
+      width:100px;
+      height: 35px;
+      margin-right: auto;
+      font-size: 2vw;
+  }
+  .company-logo {
+    aspect-ratio: 5.26;
+    object-fit: contain;
+    object-position: center;
+    width: 20vw;
+    align-self: stretch;
+    margin: auto 0;
+    margin-bottom: 3px;
+  }
+  .search-container {
+    width: 25vw;
+
+  }
+  }
