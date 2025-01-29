@@ -21,14 +21,24 @@
                 <div class="divider-line"></div>
             </div>
             <div class="signup-form">
-                <form class="form">
+                <form class="form" [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
                     <div class="form-line">
-                        <input type="text" placeholder="First Name" class="input-group" name="first-name" required>
-                        <input type="text" placeholder="Last Name" class="input-group" name="last-name" required>
+                        <input type="text" formControlName="firstName" placeholder="First Name" class="input-group" name="first-name" required>
+                        <input type="text" formControlName="lastName" placeholder="Last Name" class="input-group" name="last-name" required>
                     </div>
+                    <div class="text-danger" *ngIf="signUpForm.get('firstName')?.invalid && signUpForm.get('firstName')?.touched">
+                    First name is required (min. 2 characters).
+                    </div>
+                    <div class="text-danger" *ngIf="signUpForm.get('lastName')?.invalid && signUpForm.get('lastName')?.touched">
+                    Last name is required (min. 2 characters).
+                    </div>
+
                     <div class="form-line">
-                        <input type="email" placeholder="Email" class="input-group" name="email" required>
+                        <input type="email" placeholder="Email" class="input-group" formControlName="email" name="email" required>
                     </div>
+                    <div class="text-danger" *ngIf="signUpForm.get('email')?.invalid && signUpForm.get('email')?.touched">
+                        Please enter a valid email.
+                      </div>
                     <div class="password-line">
                         <input 
                           [type]="isPasswordVisible ? 'text' : 'password'" 
@@ -36,6 +46,7 @@
                           class="input-group" 
                           id="password-input" 
                           required 
+                          formControlName="password"
                         />
                         <button 
                           type="button" 
@@ -48,8 +59,11 @@
                           />
                         </button>
                       </div>
+                      <div class="text-danger" *ngIf="signUpForm.get('password')?.invalid && signUpForm.get('password')?.touched">
+                        Password must be at least 8 characters long.
+                      </div>
                       <div class="agreement-section">
-                        <input type="checkbox" id="agreement" class="checkbox" />
+                        <input type="checkbox" id="agreement" class="checkbox" formControlName="agreement" />
                         <label for="agreement" class="agreement-text">
                           I understand and agree to the
                           <span class="highlighted-text">Tunilanci Terms of Service</span>,
@@ -57,11 +71,14 @@
                           <span class="highlighted-text">Privacy Policy</span>.
                         </label>
                       </div>
+                      <div class="text-danger" *ngIf="signUpForm.get('agreement')?.invalid && signUpForm.get('agreement')?.touched">
+                        You must agree to the terms.
+                      </div>
+                      <button type="submit" [disabled]="signUpForm.invalid" class="cta-button">
+                        <span>Join Tunilanci</span>
+                    </button>
                 </form>
             </div>
-            <button class="cta-button">
-                <span>Join Tunilanci</span>
-            </button>
             <div class="question">
                 <p>Having an account?</p>
             </div>

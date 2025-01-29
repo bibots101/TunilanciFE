@@ -17,9 +17,12 @@
           </div>
           <span class="span-text">Or sign-in manually</span>
           <div class="signup-form">
-              <form class="form">
+              <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
                   <div class="form-line">
-                      <input type="text" placeholder="Email or Username" class="input-group" name="email" required>
+                      <input type="text" placeholder="Email or Username" class="input-group" formControlName="email" name="email" required>
+                  </div>
+                  <div class="text-danger" *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+                    Please enter a valid email.
                   </div>
                   <div class="password-line">
                       <input 
@@ -27,6 +30,7 @@
                         placeholder="Password" 
                         class="input-group" 
                         id="password-input" 
+                        formControlName="password"
                         required 
                       />
                       <button 
@@ -40,6 +44,9 @@
                         />
                       </button>
                   </div>
+                  <div class="text-danger" *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+                    Password must be at least 6 characters long.
+                  </div>
                   <a href="" class="forgot-style">Forgot Password?</a>
                   <div class="agreement-section">
                       <input type="checkbox" id="agreement" class="checkbox" />
@@ -47,11 +54,14 @@
                         <span>Remember me</span>
                       </label>
                   </div>
-              </form>
+                  <div *ngIf="errorMessage" class="alert alert-danger">
+                    {{ errorMessage }}
+                  </div>
+                  <button class="cta-button" type="submit" [disabled]="loginForm.invalid">
+                    <span>Sign in</span>
+                  </button>
+              </form> 
           </div>
-          <button class="cta-button">
-              <span>Sign in</span>
-          </button>
           <div class="divider-container" role="separator" aria-orientation="horizontal">
             <div class="divider-line"></div>
             <div class="divider-text">Don't have a Tunilanci account?</div>
