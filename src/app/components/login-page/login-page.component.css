@@ -230,8 +230,8 @@
 
 .checkbox {
   aspect-ratio: 1;
-  width:3vw;
-  height: 2vw;
+  width:15px;
+  height: 15px;
   border-radius: 4px;
   align-self: flex-start;
   accent-color: #079046;
@@ -240,9 +240,13 @@ input[type=checkbox]:not(:checked) {
   background-color: #CFCFCF;
 }
 
-
+.span-text{
+  margin-top: 10px;
+}
 .agreement-text {
   display: block;
+  margin-top: -2px;
+  font-size: 14px;
   color: black;
 }
 
@@ -256,7 +260,6 @@ input[type=checkbox]:not(:checked) {
   border-radius: 43px;
   box-shadow: 4px 4px 12px 0px rgba(7, 144, 70, 0.25);
   background-color: #079046;
-  margin-top: 25px;
   font-size: 1.2vw;
   font-weight: 400;
   color: #e4e4e4;
