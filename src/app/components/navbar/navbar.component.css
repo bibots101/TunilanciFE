@@ -92,7 +92,7 @@
   
   .search-container {
     border-radius: 5vw;
-    background-color: var(--light-color);
+    background-color: white;
     align-self: stretch;
     display: flex;
     min-height: 2vw;
@@ -100,7 +100,8 @@
     gap: 0.5vw;
     font-size: 1.2vw;
     color: #0d0d0d;
-    width: 8.9vw;
+    width: 180px;
+    height: 36px;
     padding: 0.8vw;
   }
   

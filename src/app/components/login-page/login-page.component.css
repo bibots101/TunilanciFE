@@ -32,7 +32,8 @@
           rgba(228, 228, 228, 0.25) 100%);
   backdrop-filter: blur(100px);
   padding: 35px 50px;
-  width: 25vw;
+  width: 448px;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -229,11 +230,16 @@
 
 .checkbox {
   aspect-ratio: 1;
-  width:1vw;
-  background-color: rgba(187, 200, 193, 1);
+  width:3vw;
+  height: 2vw;
   border-radius: 4px;
   align-self: flex-start;
+  accent-color: #079046;
 }
+input[type=checkbox]:not(:checked) {
+  background-color: #CFCFCF;
+}
+
 
 .agreement-text {
   display: block;
@@ -314,6 +320,6 @@
 .forgot-style{
   color: #079046;
   font-size: 1.2vw;
-  margin-top: 10px;
+  margin: 10px 0 0 10px;
   align-self:flex-start;
 }
